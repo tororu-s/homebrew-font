@@ -11,9 +11,9 @@ end
 
 class Ricty < Formula
   desc "Font for programming"
-  homepage "http://www.rs.tus.ac.jp/yyusa/ricty.html"
-  url "http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator-4.1.0.sh"
-  sha256 "6e2b656814ffdad5430f9c52bff89609b1350de1127f61966cdf441710ec60b3"
+  homepage "http://www.yusa.lab.uec.ac.jp/~yusa/ricty.html"
+  url "http://www.yusa.lab.uec.ac.jp/~yusa/ricty/ricty_generator.sh"
+  sha256 "86bf0fed84ef806690b213798419405d7ca2a1a4bed4f6a28b87c2e2d07ad60d"
   revision 2
 
   option "with-powerline", "Patch for Powerline"
@@ -31,8 +31,8 @@ class Ricty < Formula
   depends_on "fontforge" => :build
 
   resource "oblique_converter" do
-    url "http://www.rs.tus.ac.jp/yyusa/ricty/regular2oblique_converter.pe"
-    sha256 "365c7973a02abf3970f09a557f8f93065341885f9e13570fd2e901e530c4864d"
+    url "https://github.com/metalefty/Ricty/blob/master/misc/regular2oblique_converter.pe"
+    sha256 "6b5fb223f50248ac755f95b862ae3662d9a8c944c55973c9406d572db4f5dc85"
   end
 
   resource "inconsolataregular" do
